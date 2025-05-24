@@ -1,4 +1,3 @@
-import ProductList from "@/components/shared/product/product-list";
 import {
   getLatestProducts,
   getFeaturedProducts,
@@ -9,6 +8,10 @@ import IconBoxes from "@/components/icon-boxes";
 import DealCountDown from "../../components/deal-countdown";
 import HeroSection from "@/components/shared/hero-section";
 import SpecialDishes from "@/components/shared/product/special-section";
+import AboutSection from "@/components/shared/about-section";
+import ChefSection from "@/components/shared/chef-section";
+import TestimonialsSection from "@/components/shared/testimonials";
+import Newsletter from "@/components/shared/newsletters";
 
 const Homepage = async () => {
   const latestProduct = await getLatestProducts();
@@ -21,11 +24,14 @@ const Homepage = async () => {
         title="Our Special Dishes"
         limit={4}
       />
+      <ViewAllProductButton />
+      <AboutSection />
+      <ChefSection />
+      <TestimonialsSection />
+      <Newsletter />
       {featuredProduct.length > 0 && (
         <ProductCarousel data={featuredProduct}></ProductCarousel>
       )}
-      <ProductList data={latestProduct} title="Newest Arrivals" limit={4} />
-      <ViewAllProductButton />
       <DealCountDown />
       <IconBoxes />
     </>

@@ -1,4 +1,9 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types";
@@ -28,6 +33,9 @@ const DishesCard = ({ product }: { product: Product }) => {
         <Link href={`/product/${product.slug}`}>
           <h2 className="text-sm font-medium text-center">{product.name}</h2>
         </Link>
+        <CardDescription className="text-center">
+          {product.description}
+        </CardDescription>
         <div className="gap-4 flex justify-center">
           <Rating value={Number(product.rating)} />
           {/* {product.stock > 0 ? (

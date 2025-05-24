@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="relative">
-        <div className="max-w-7xl mx-auto  py-16 lg:flex lg:items-center lg:justify-between">
+        <div className="max-w-7xl mx-auto py-16 lg:flex lg:items-center lg:justify-between">
           {/* Left Content */}
           <div className="lg:w-1/2 space-y-11">
             <h1 className="text-5xl sm:text-7xl font-bold leading-tight">
@@ -31,8 +31,10 @@ const HeroSection = () => {
             <p
               className={`text-base max-w-md ${isDark ? "text-gray-300" : "text-gray-600"}`}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Discover a world of flavor where tradition meets creativity. From
+              locally sourced ingredients to globally inspired dishes, we craft
+              meals that nourish, comfort, and excite. Start your taste journey
+              with us.
             </p>
 
             {/* Buttons */}

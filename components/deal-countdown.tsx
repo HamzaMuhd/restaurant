@@ -72,13 +72,13 @@ const DealCountdown = () => {
 
           <div className="text-center">
             <Button asChild>
-              <Link href="/search">View Products</Link>
+              <Link href="/search">View Dishes</Link>
             </Button>
           </div>
         </div>
         <div className="flex justify-center">
           <Image
-            src="/images/promo.jpg"
+            src="/images/dish-4.png"
             alt="promotion"
             width={300}
             height={200}
@@ -106,13 +106,13 @@ const DealCountdown = () => {
         </ul>
         <div className="text-center">
           <Button asChild>
-            <Link href="/search">View Products</Link>
+            <Link href="/search">View Dishes</Link>
           </Button>
         </div>
       </div>
       <div className="flex justify-center">
         <Image
-          src="/images/promo.jpg"
+          src="/images/dish-4.png"
           alt="promotion"
           width={300}
           height={200}
