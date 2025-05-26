@@ -1,4 +1,4 @@
-import { cn, formatCurrency } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const DishesPrice = ({
   value,
@@ -7,11 +7,7 @@ const DishesPrice = ({
   value: number;
   className?: string;
 }) => {
-  return (
-    <span className={cn("", className)}>
-      {formatCurrency(value.toFixed(0))}
-    </span>
-  );
+  return <span className={cn("", className)}>₦{value.toFixed(0)}</span>;
 };
 
 export default DishesPrice;
