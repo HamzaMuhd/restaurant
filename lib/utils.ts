@@ -47,16 +47,16 @@ export function round2(value: number | string) {
   }
 }
 
-const CURRENCY_FORMATTER = new Intl.NumberFormat("en-US", {
-  currency: "USD",
-  style: "currency",
-  minimumFractionDigits: 2,
-});
-// const CURRENCY_FORMATTER = new Intl.NumberFormat("en-NG", {
-//   currency: "NGN",
+// const CURRENCY_FORMATTER = new Intl.NumberFormat("en-US", {
+//   currency: "USD",
 //   style: "currency",
 //   minimumFractionDigits: 2,
 // });
+const CURRENCY_FORMATTER = new Intl.NumberFormat("en-NG", {
+  currency: "NGN",
+  style: "currency",
+  minimumFractionDigits: 2,
+});
 
 export function formatCurrency(amount: number | string | null) {
   if (typeof amount === "number") {
